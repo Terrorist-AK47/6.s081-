@@ -696,7 +696,7 @@ procdump(void)
   }
 }
 
-uint nproc(void){
+uint64 nproc(void){
 	struct proc* p;
 	uint64 n = 0;
 	for (p = proc; p < &proc[NPROC]; p++){
